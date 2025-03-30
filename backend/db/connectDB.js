@@ -9,6 +9,7 @@ import mongoose from "mongoose";
         console.log(`Database is connected 😇🥳`)
     } catch (error) {
         console.log("Error while connectiong the database",error.message)
+        process.exit(1)
     }
 }
 export default connection
